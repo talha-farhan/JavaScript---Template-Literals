@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Template Strings</title>
+</head>
+<body>
+    <h1>JavaScript - Template Strings</h1>
+    <h4>Things to Know</h4>
+    <ul>
+        <li>According to MDN: Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.</li>
+        <li>Template literals are used to embed expressions inside a string.</li>
+        <li>These are sometimes called as template strings</li>
+        <li>A back tick is used for the purpose</li>
+        <li>To avoid the backtick or the dollar sign, use a back slash</li>
+    </ul>
+
+    <h4>Syntax</h4>
+    <p>
+        `string text`
+
+        `string text line 1
+        string text line 2`
+
+        `string text ${expression} string text`
+
+        tagFunction`string text ${expression} string text`
+    </p>
+
+    <h4>Examples</h4>
+    <script>
+        console.log(`I have ${3*2} pencils`);
+
+        console.log(`There are ${10+12+15} books on the table`);
+
+        let score1 = 46;
+        let score2 = 58;
+        let score3 = 42;
+        let innings = 3;
+        console.log(`Babar's average in this series is ${(score1 + score2 + score3) / innings}`);
+
+        const a = 5;
+        const b = 10;
+        console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
+    </script>
+
+    <h4>References</h4>
+    <ul>
+        <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</li>
+    </ul>
+</body>
+</html>
